@@ -12,8 +12,8 @@
     --generation: calc(  3 * var(--decade));
     --lifetime:   calc(  8 * var(--decade));
 
-    --work-day:  calc( 8 * var(--hour));
-    --work-week: calc( 5 * var(--day));
+    --work-day:   calc( 8 * var(--hour));
+    --work-week:  calc( 5 * var(--day));
 
     --blink:           .1s;
     --sneeze:          .5s;
@@ -40,16 +40,16 @@
      * 10 Little-Known Units of Time
      * https://www.mentalfloss.com/article/60080/10-little-known-units-time
      */
-    --atom: .15957s;
-    --ghurry: calc(24 * var(--minute));
-    --lustre: calc(5 * var(--year));
-    --mileway: calc(20 * var(--minute));
-    --nundine: calc(9 * var(--day));
-    --nychthemeron: var(--day);
-    --punct: calc(15 * var(--minute));
-    --quadrant: calc(6 * var(--hour));
-    --quinzieme: calc(15 * var(--day));
-    --scruple: calc(24 * var(--minute));
+    --atom:          .15957s;
+    --ghurry:        calc(24 * var(--minute));
+    --lustre:        calc(5 * var(--year));
+    --mileway:       calc(20 * var(--minute));
+    --nundine:       calc(9 * var(--day));
+    --nychthemeron:  var(--day);
+    --punct:         calc(15 * var(--minute));
+    --quadrant:      calc(6 * var(--hour));
+    --quinzieme:     calc(15 * var(--day));
+    --scruple:       calc(24 * var(--minute));
 
     /*
      * The Potrzebie System of Weights and Measures
@@ -57,22 +57,29 @@
      * https://webmadness.net/resources/The-Potrzebie-system-of-weights-and-measures.pdf
      *
      * There is an inconsistency in the definitions where 1 wolverton = 0.00001 clarke.
-     * Calculating fractions of clarkes suggests that a 1 wolverton = 0.00000001 clarke. 
+     * Calculating fractions of clarkes suggests that 1 wolverton = 0.00000001 clarke. 
      */
-    --clarke: var(--sidereal-day);
-    --wood: calc(0.1 * var(--clarke));
-    --martin: calc(0.01 * var(--wood));
-    --kovac: calc(0.01 * var(--martin));
-    --wolverton: calc(0.001 * var(--kovac));
-    --mingo: calc(10 * var(--clarke));
-    --cowznofski: calc(10 * var(--mingo));
+    --clarke:      var(--sidereal-day);
+    --wood:        calc(0.1 * var(--clarke));
+    --martin:      calc(0.01 * var(--wood));
+    --kovac:       calc(0.01 * var(--martin));
+    --wolverton:   calc(0.001 * var(--kovac));
+    --mingo:       calc(10 * var(--clarke));
+    --cowznofski:  calc(10 * var(--mingo));
 
     /*
      * https://en.wikipedia.org/wiki/List_of_humorous_units_of_measurement
      */
-    --friedman: calc(6 * var(--month));
-    --jiffy: 0.01s;
-    --microcentury: calc((52 * var(--minute)) + 35.7s);
-    --nanocentury: 3.156s;
-    --scaramucci: calc(11 * var(--day));
+    --friedman:      calc(6 * var(--month));
+    --jiffy:         0.01s;
+    --microcentury:  calc((52 * var(--minute)) + 35.7s);
+    --nanocentury:   3.156s;
+    --scaramucci:    calc(11 * var(--day));
+      /* JSS: I chose the time; definition in the reference */
+    --ny-second:     0.333s;
+      /*
+       * JSS definition: the time it takes for one's life to pass before their eyes
+       *                 after a cyclist almost takes you out in a crosswalk.
+       */
+    --ny-minute:     calc(60 * var(--ny-second));
 }
